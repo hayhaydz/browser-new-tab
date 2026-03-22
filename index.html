@@ -80,86 +80,139 @@
       width: auto;
       aspect-ratio: 1/1;
     }
+
+    .link__label {
+      position: fixed;
+      pointer-events: none;
+      background-color: #eee;
+      color: #1a1a1a;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      
+      display: none; 
+      opacity: 0;
+      z-index: 9999;
+      transform: translate(-50%, -140%);
+    }
+
+    .link:hover .link__label {
+      display: block;
+      opacity: 1;
+    }
   </style>
   <div class="container">
       <a href="https://www.youtube.com" class="link">
-      <img src="https://www.youtube.com/s/desktop/16fc047a/img/favicon_144x144.png" alt="YouTube icon">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=youtube.com" alt="YouTube icon">
+      <span class="link__label">YouTube</span>
     </a>
 
     <a href="https://mail.google.com" class="link">
-      <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail icon">
+      <img src="https://icon.horse/icon/mail.google.com" alt="Gmail icon">
+      <span class="link__label">Gmail</span>
     </a>
 
     <a href="https://drive.google.com/drive/my-drive" class="link">
       <img src="https://www.gstatic.com/images/branding/product/2x/drive_2020q4_96dp.png" alt="Google Drive icon">
+      <span class="link__label">Drive</span>
     </a>
 
     <a href="https://calendar.google.com" class="link">
       <img src="https://www.gstatic.com/calendar/images/manifest/logo_2020q4_512.png" alt="Google Calendar icon">
+      <span class="link__label">Calendar</span>
     </a>
 
-    <a href="https://www.notion.so" class="link">
-      <img src="https://www.notion.so/images/logo-ios.png" alt="Notion icon">
+    <a href="https://github.com/pulls/review-requested" class="link">
+      <img src="https://icon.horse/icon/github.com" alt="GitHub icon">
+        <span class="link__label">PR reviews</span>
     </a>
 
     <a href="https://chatgpt.com" class="link">
-      <img src="https://chatgpt.com/cdn/assets/favicon-180x180-od45eci6.webp" alt="ChatGPT icon">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=chatgpt.com" alt="ChatGPT icon">
+      <span class="link__label">ChatGPT</span>
     </a>
 
     <a href="https://gemini.google.com/u/1/app" class="link">
-      <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_4g_512_lt_f94943af3be039176192d.png" alt="Gemini icon">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=gemini.google.com" alt="Gemini icon">
+      <span class="link__label">Gemini</span>
     </a>
 
     <a href="https://claude.ai" class="link">
-      <img src="https://claude.ai//images/claude_app_icon.png" alt="Claude AI icon">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=claude.ai" alt="Claude AI icon">
+      <span class="link__label">Claude AI</span>
+    </a>
+
+    <a href="https://t3.chat/" class="link">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=t3.chat" alt="T3 Chat icon">
+      <span class="link__label">T3 Chat</span>
     </a>
 
     <a href="https://chat.mistral.ai/chat" class="link">
-      <img src="https://chat.mistral.ai//favicons/apple-touch-icon.png" alt="Mistral AI icon">
-    </a>
-
-    <a href="https://www.meta.ai/" class="link">
-      <img src="https://static.xx.fbcdn.net/rsrc.php/v4/yo/r/dw-Xclzmg3s.png" alt="Meta AI icon">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=chat.mistral.ai" alt="Mistral AI icon">
+      <span class="link__label">Mistral AI</span>
     </a>
 
     <a href="https://huggingface.co/chat/" class="link">
-      <img src="https://huggingface.co/chat/huggingchat/apple-touch-icon.png" alt="Hugging Face Chat icon">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=huggingface.co" alt="Hugging Face Chat icon">
+      <span class="link__label">Hugging Face Chat</span>
     </a>
 
     <a href="https://www.crunchyroll.com/" class="link">
-      <img src="https://www.crunchyroll.com/build/assets/img/favicons/favicon-v2-96x96.png" alt="Crunchyroll icon">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=crunchyroll.com" alt="Crunchyroll icon">
+      <span class="link__label">Crunchyroll</span>
+    </a>
+
+    <a href="https://www.netflix.com" class="link">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=netflix.com" alt="Netflix icon">
+      <span class="link__label">Netflix</span>
     </a>
 
     <a href="https://www.artstation.com/?sort_by=trending" class="link">
-      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" fill="none" viewBox="0 0 35 32"><path fill="#13AFF0" fill-rule="evenodd" d="M35 24.354c0-.704-.208-1.36-.565-1.91L22.937 2.525A3.54 3.54 0 0 0 19.813.652h-6.077l17.76 30.666 2.8-4.833c.553-.925.704-1.334.704-2.131m-35-.037 2.956 5.093h.001a3.54 3.54 0 0 0 3.157 1.938h19.624l-4.072-7.03zM10.832 5.621l7.938 13.701H2.893z" clip-rule="evenodd"/></svg>
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=artstation.com" alt="ArtStation icon">
+      <span class="link__label">ArtStation</span>
     </a>
 
     <a href="https://cara.app/explore" class="link">
-      <img src="https://cara.app/favicon.ico" alt="Are.na icon">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=cara.app" alt="Cara icon">
+      <span class="link__label">Cara</span>
     </a>
     
     <a href="https://www.are.na/" class="link">
-      <img src="https://www.are.na/android-chrome-192x192.png" alt="Are.na icon">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=are.na" alt="Are.na icon">
+      <span class="link__label">Are.na</span>
     </a>
     
     <a href="https://www.cosmos.so/" class="link">
-      <img src="https://www.cosmos.so/android-chrome-192x192.png" alt="Cosmos icon">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=cosmos.so" alt="Cosmos icon">
+      <span class="link__label">Cosmos</span>
     </a>
 
     <a href="https://artvee.com/" class="link">
-      <img src="https://mdl.artvee.com/assets/icon-350x350.png" alt="Artvee icon">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=artvee.com" alt="Artvee icon">
+      <span class="link__label">Artvee</span>
     </a>
 
     <a href="https://www.rawpixel.com/public-domain/rawpixel-collection" class="link">
-      <img src="https://www.rawpixel.com/android-chrome-512x512.png" alt="Rawpixel icon">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=rawpixel.com" alt="Rawpixel icon">
+      <span class="link__label">Rawpixel</span>
     </a>
 
     <a href="https://public.work/" class="link">
       <div class="link__placeholder-letter">
         <span>P</span>
       </div>
+      <span class="link__label">Public Work</span>
     </a>
 
+    <a href="https://stitch.withgoogle.com/u/1/?pli=1" class="link">
+      <img src="https://www.google.com/s2/favicons?sz=128&domain=stitch.withgoogle.com" alt="Stitch icon">
+      <span class="link__label">Stitch</span>
+    </a>
   </div>
 </body>
 </html>
