@@ -1,0 +1,8 @@
+.DS_STORE
+**/**/.DS_STORE
+
+*.zip
+*.tar.gz
+*.log
+**/**/*.zip
+**/**/*.tar.gz

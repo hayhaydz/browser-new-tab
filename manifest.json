@@ -8,7 +8,10 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "custom-new-tab@yourdomain.com"
+      "id": "custom-new-tab@hayhaydz",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
